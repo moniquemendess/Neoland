@@ -3,7 +3,7 @@
 //? Completa la función que tomando dos números como argumento devuelva el más alto.
 //!-------------------------------------------------------------------------
 
-/*function sum(numberOne, numberTwo) {
+function sum(numberOne, numberTwo) {
   if (numberOne > numberTwo) {
     return numberOne;
   } else {
@@ -12,7 +12,7 @@
 }
 
 const resultado = sum(5, 9);
-console.log(resultado);*/
+//console.log(resultado);
 
 //!------------------------------------------------------------------------------------------
 //? Iteración #2: Buscar la palabra más larga
@@ -28,14 +28,14 @@ const avengers = [
   "Capitão M.",
 ];
 
-function encontrarPalabraMaisLonga(array) {
+/*function encontrarPalabraMaisLonga(array) {
   let palavraMaisLonga = "";
 
-  for (let index = 0; index < array.length; index++) {
+  for (let i = 0; i < array.length; i++) {
     //console.log("ya estamos aqui otra vez - bucle", index);
     //console.log(array.length);
 
-    if (array[index].length > palavraMaisLonga.length) {
+    if (array[i].length > palavraMaisLonga.length) {
       //console.log("antes =", palavraMaisLonga);
       //palavraMaisLonga = array[index];
       //console.log("despues =", palavraMaisLonga);
@@ -48,6 +48,18 @@ function encontrarPalabraMaisLonga(array) {
 
 const palavraMaisLonga = encontrarPalabraMaisLonga(avengers);
 
-//console.log(palavraMaisLonga);
+//console.log(palavraMaisLonga); */
 
 //!------------------------------------------------------------------------------------------
+//? **Iteración #3: Calcular la suma**
+//? Calcular una suma puede ser tan simple como iterar sobre un array y sumar cada uno de los elementos.
+//? Implemente la función denominada sumNumbers que toma un array de números como argumento y devuelve la suma de todos los números de la matriz.
+//!------------------------------------------------------------------------------------------
+
+const numbers = [1, 2, 3, 5, 45, 37, 58];
+
+function sumAll(param) {
+  let suma = param.reduce((sum, item) => sum + item, 0);
+  return suma;
+}
+console.log(sumAll(numbers));
