@@ -1,0 +1,32 @@
+figure {
+    width: 300px ;
+    height: 320px;
+    border: 1px solid rgba(0, 0, 0, 0.496);
+    border-radius: 10px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+height: 200px;
+width: 200px;
+
+}
+
+#app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+font-size: 60x;
+text-align: center;
+text-shadow: 1px 1px 1px #d68888, 
+3px 3px 5px rgb(116, 116, 223);
+}
