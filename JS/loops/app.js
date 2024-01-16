@@ -108,7 +108,7 @@ console.log(toysArray); */
 //? Iteración #7: For...of avanzado
 //!---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-const toyss = [
+const toys = [
   { id: 5, name: "Buzz MyYear", sellCount: 10 },
   { id: 11, name: "Action Woman", sellCount: 24 },
   { id: 23, name: "Barbie Man", sellCount: 15 },
@@ -118,9 +118,9 @@ const toyss = [
 
 const popularToys = [];
 
-for (const toysArray of toyss) {
-  if (toysArray.sellCount > 15) {
-    popularToys.push(toysArray);
+for (const toy of toys) {
+  if (toy.sellCount > 15) {
+    popularToys.push(toy);
   }
 }
 
