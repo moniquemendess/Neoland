@@ -4,7 +4,7 @@
 //? Haz un bucle y muestra por consola todos aquellos valores del array que incluyan la palabra "Camiseta". Usa la función .***includes*** de javascript.
 //!----------------------------------------------------------------------------------------------------------------------------------------------------
 
-const products = [
+/*const products = [
   "Camiseta de Pokemon",
   "Pantalón coquinero",
   "Gorra de gansta",
@@ -17,7 +17,7 @@ for (let i = 0; i < products.length; i++) {
   if (products[i].includes("Camiseta")) {
     console.log(products[i]);
   }
-}
+} */
 
 //!---------------------------------------------------------------------------------------------------------------------------------------------------------
 //? ***Iteración #2: Condicionales avanzados**
@@ -29,7 +29,7 @@ for (let i = 0; i < products.length; i++) {
 
 //!---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-const placesToTravel = [
+/*const placesToTravel = [
   "Japon",
   "Venecia",
   "Murcia",
@@ -40,7 +40,7 @@ const placesToTravel = [
 
 for (const places of placesToTravel) {
   console.log(`El viaje es para ${places}`);
-}
+} 
 
 //!---------------------------------------------------------------------------------------------------------------------------------------------------------
 //? ***Iteración #4: Iteración #4: Probando For...in
@@ -55,8 +55,30 @@ const alien = {
 
 for (const terra in alien) {
   console.log(alien[terra]);
-}
+} */
 
 //!---------------------------------------------------------------------------------------------------------------------------------------------------------
 //? Iteración #5: Probando For
 //!---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+const placesToTravel = [
+  { id: 5, name: "Japan" },
+  { id: 11, name: "Venecia" },
+  { id: 23, name: "Murcia" },
+  { id: 40, name: "Santander" },
+  { id: 44, name: "Filipinas" },
+  { id: 59, name: "Madagascar" },
+];
+
+const placesArray = []; // guardar los ID nuevo
+
+for (let i = 0; i < placesToTravel.length; i++) {
+  if (placesToTravel[i].id === 11 || placesToTravel[i].id === 40) {
+    //al percorrer por el placesToTravel se fueron iguales
+    delete placesToTravel[i]; // ID 11 Y 40, removidos
+  } else {
+    placesArray.push(placesToTravel[i]); // empura los nuvevos valores para placeArray.
+  }
+}
+
+console.log(placesArray);
