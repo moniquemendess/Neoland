@@ -38,7 +38,7 @@ console.log("🚀 ~ result:", result); */
 //? no hace falta hacer destructuring del array, solo del objeto.
 //!-----------------------------------------------------------------------------------------------------------------------
 
-const game = {
+/* const game = {
   title: "The last us 2",
   gender: ["action", "zombie", "survival"],
   year: 2020,
@@ -46,7 +46,7 @@ const game = {
 
 const { title, year } = game;
 console.log("🚀 ~ year:", year);
-console.log("🚀 ~ title:", title);
+console.log("🚀 ~ title:", title); */
 
 //!---------------------------------------------------------------------------------------------------------------------
 //? Iteración #2: Destructuring
@@ -55,7 +55,7 @@ console.log("🚀 ~ title:", title);
 //? imprimelo por consola.
 //!-----------------------------------------------------------------------------------------------------------------------
 
-const fruits = ["Banana", "Strawberry", "Orange"];
+/* const fruits = ["Banana", "Strawberry", "Orange"];
 
 const fruitsCopy = fruits; // Hice referencia a la copia
 const [fruit1, fruit2, fruit3] = fruitsCopy; // he modificado la copia
@@ -63,4 +63,35 @@ console.log("🚀 ~ fruit3:", fruit3);
 console.log("🚀 ~ fruit2:", fruit2);
 console.log("🚀 ~ fruit1:", fruit1);
 
-console.log(fruits); // El original no esta modificado
+console.log(fruits); // El original no esta modificado */
+
+//!---------------------------------------------------------------------------------------------------------------------
+//? Iteración #2: Destructuring
+//? 2.3 En base al siguiente javascript, usa destructuring para crear 2
+//? variables igualandolo a la función e imprimiendolo por consola.
+//!-----------------------------------------------------------------------------------------------------------------------
+
+/*const animalFunction = () => {
+  return { name: "Bengal Tiger", race: "Tiger" };
+};
+
+let { name, race } = animalFunction();
+console.log("🚀 ~ race:", race);
+console.log("🚀 ~ name:", name); */
+
+//!---------------------------------------------------------------------------------------------------------------------
+//? Iteración #2: Destructuring
+//? 2.4 En base al siguiente javascript, usa destructuring para crear las
+//? variables name y itv con sus respectivos valores. Posteriormente crea
+//? 3 variables usando igualmente el destructuring para cada uno de los años
+//? y comprueba que todo esta bien imprimiendolo.
+//!-----------------------------------------------------------------------------------------------------------------------
+
+const car = { name: "Mazda 6", itv: [2015, 2011, 2020] };
+
+const { name, itv } = car;
+
+const [ano01, ano02, ano03] = itv;
+console.log("🚀 ~ ano03:", ano03);
+console.log("🚀 ~ ano02:", ano02);
+console.log("🚀 ~ ano01:", ano01);
