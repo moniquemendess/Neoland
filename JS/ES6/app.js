@@ -145,8 +145,73 @@ console.log("🚀 ~ toyUpdateCopy:", toyUpdateCopy); */
 //? pero sin editar el array inicial. De nuevo, usando spread operatos.
 //!-----------------------------------------------------------------------------------------------------------------------
 
-const colors = ["rojo", "azul", "amarillo", "verde", "naranja"];
+/* const colors = ["rojo", "azul", "amarillo", "verde", "naranja"];
 
 const colorCopy = [...colors];
-colorCopy.splice(2, 1);
-console.log("🚀 ~ colorCopy:", colorCopy);
+colorCopy.splice(2, 1); // splice elimina elemento con la posicao dentro del array,
+console.log("🚀 ~ colorCopy:", colorCopy); */
+
+//!---------------------------------------------------------------------------------------------------------------------
+//? Iteración #4: Map
+//? 4.1 Dado el siguiente array, devuelve un array con sus nombres utilizando
+//!-----------------------------------------------------------------------------------------------------------------------
+
+/* const users = [
+  { id: 1, name: "Abel" },
+  { id: 2, name: "Julia" },
+  { id: 3, name: "Pedro" },
+  { id: 4, name: "Amanda" },
+];
+
+const nameusers = users.map((users) => users.name); // declare una variable y usé  un map() para acceder al valor de name.
+console.log("🚀 ~ nameusers:", nameusers);  */
+
+//!---------------------------------------------------------------------------------------------------------------------
+//? Iteración #4: Map
+//? 4.2 Dado el siguiente array, devuelve una lista que contenga los valores de la propiedad .name y cambia el nombre
+//? a Anacleto en caso de que empiece por 'A'.
+//!-----------------------------------------------------------------------------------------------------------------------
+
+/* const users = [
+  { id: 1, name: "Abel" },
+  { id: 2, name: "Julia" },
+  { id: 3, name: "Pedro" },
+  { id: 4, name: "Amanda" },
+];
+
+const userName = users.map((users) => { // he criado una nueva variable y usé map para acceder el array users.
+  if (users.name.startsWith("A")) { // hecho una condición, se users.name empieza con la letra A.
+    return "Anacleto"; // me retorna  Anacleto
+  } else {  // se no, retorna el array original
+    return users.name;
+  }
+});
+
+const userNameNovo = userName; // creé una nueva variable para ver el resultado con Anacleto
+console.log("🚀 ~ userNameNovo:", userNameNovo); */
+
+//!---------------------------------------------------------------------------------------------------------------------
+//? Iteración #4: Map
+//? 4.3 Dado el siguiente array, devuelve una lista que contenga los valores
+//? de la propiedad .name y añade al valor de .name el string cuando el valor de la propiedad isVisited = true. (Visitado)'
+//!-----------------------------------------------------------------------------------------------------------------------
+
+/* const cities = [
+  { isVisited: true, name: "Tokyo" },
+  { isVisited: false, name: "Madagascar" },
+  { isVisited: true, name: "Amsterdam" },
+  { isVisited: false, name: "Seul" },
+];
+
+    const citiesNew = cities.map((city) => {
+  // nueva variable y map para acceder al array (city) es el parametro
+  if (city.isVisited === true) {
+    // si city es igual a true
+    return { ...city, name: city.name + " VISITADO" }; // returnar con +visitado se for true
+  } else {
+    return city; // si no esta con true, retorna el original.
+  }
+});
+
+const citiesNewResult = citiesNew;
+console.log("🚀 ~ citiesNewResult:", citiesNewResult); */
