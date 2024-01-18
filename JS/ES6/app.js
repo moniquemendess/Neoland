@@ -163,7 +163,7 @@ console.log("🚀 ~ colorCopy:", colorCopy); */
   { id: 4, name: "Amanda" },
 ];
 
-const nameusers = users.map((users) => users.name); // declare una variable y usé  un map() para acceder al valor de name.
+const nameusers = users.map((user) => user.name); // declare una variable y usé  un map() para acceder al valor de name.
 console.log("🚀 ~ nameusers:", nameusers);  */
 
 //!---------------------------------------------------------------------------------------------------------------------
@@ -299,3 +299,45 @@ const streamersMap = streamersNovo.map((streamersNovo) => {
 });
 
 console.log(streamersMap); */
+
+//!---------------------------------------------------------------------------------------------------------------------
+//? Iteración #5: Filter
+//? 5.6 Dado el siguiente html y javascript, utiliza .filter() para mostrar por consola
+//? los streamers que incluyan la palabra introducida en el input. De esta forma, si
+//? introduzco 'Ru' me deberia de mostrar solo el streamer 'Rubius'. Si
+//? introduzco 'i', me deberia de mostrar el streamer 'Rubius' e 'Ibai'.
+//!-----------------------------------------------------------------------------------------------------------------------
+
+/* const streamers = [
+  { name: "Rubius", age: 32, gameMorePlayed: "Minecraft" },
+  { name: "Ibai", age: 25, gameMorePlayed: "League of Legends" },
+  { name: "Reven", age: 43, gameMorePlayed: "League of Legends" },
+  { name: "AuronPlay", age: 33, gameMorePlayed: "Among Us" },
+];
+
+const streamerNew = document.querySelector("#toFilterStreamers");
+console.log("🚀 ~ streamerNew:", streamerNew); */
+
+//!---------------------------------------------------------------------------------------------------------------------
+//? Iteración #6: Find
+//? 6.1 Dado el siguiente array, usa .find() para econtrar el número 100.
+//!-----------------------------------------------------------------------------------------------------------------------
+
+/* const numbers = [32, 21, 63, 95, 100, 67, 43];
+
+const numberNew = numbers.find((number) => number === 100);
+console.log("🚀 ~ numberNew:", numberNew); */
+
+//!---------------------------------------------------------------------------------------------------------------------
+//? Iteración #6: Find
+//? 6.2 Dado el siguiente array, usa .find() para econtrar la pelicula del año 2010.
+//!-----------------------------------------------------------------------------------------------------------------------
+
+const movies = [
+  { title: "Madagascar", stars: 4.5, date: 2015 },
+  { title: "Origen", stars: 5, date: 2010 },
+  { title: "Your Name", stars: 5, date: 2016 },
+];
+
+const moviesNew = movies.find((movie) => movie.date === 2010); // returna el seg array del año de 2010
+console.log("🚀 ~ moviesNew:", moviesNew);
