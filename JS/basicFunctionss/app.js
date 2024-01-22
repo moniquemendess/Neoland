@@ -133,7 +133,7 @@ console.log("🚀 ~ result:", result);
 let guardarDuplicados = [];
 
 duplicates.forEach((item) => {
-  if (!guardarDuplicados.includes(item)) {
+  if (!guardarDuplicados.includes(item))   {
     guardarDuplicados.push(item);
   }
 });

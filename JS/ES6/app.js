@@ -333,14 +333,14 @@ console.log("🚀 ~ numberNew:", numberNew); */
 //? 6.2 Dado el siguiente array, usa .find() para econtrar la pelicula del año 2010.
 //!-----------------------------------------------------------------------------------------------------------------------
 
-const movies = [
+/*const movies = [
   { title: "Madagascar", stars: 4.5, date: 2015 },
   { title: "Origen", stars: 5, date: 2010 },
   { title: "Your Name", stars: 5, date: 2016 },
 ];
 
 const moviesNew = movies.find((movie) => movie.date === 2010); // returna el seg array del año de 2010
-console.log("🚀 ~ moviesNew:", moviesNew);
+console.log("🚀 ~ moviesNew:", moviesNew); */
 
 //!---------------------------------------------------------------------------------------------------------------------
 //? Iteración #6: Find
@@ -350,7 +350,7 @@ console.log("🚀 ~ moviesNew:", moviesNew);
 //? lo queremos meter en la propiedad .mutation del objeto fusionado.
 //!-----------------------------------------------------------------------------------------------------------------------
 
-const aliens = [
+/*const aliens = [
   { name: "Zalamero", planet: "Eden", age: 4029 },
   { name: "Paktu", planet: "Andromeda", age: 32 },
   { name: "Cucushumushu", planet: "Marte", age: 503021 },
@@ -379,4 +379,4 @@ const mutationNew = mutations.find(
 );
 
 const objectJuntos = { ...alienNew, ...mutationNew };
-console.log("🚀 ~ objectJuntos:", objectJuntos);
+console.log("🚀 ~ objectJuntos:", objectJuntos); */
