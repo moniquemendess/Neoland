@@ -140,11 +140,15 @@ duplicates.forEach((item) => {
 const duplicatess = guardarDuplicados;
 console.log("🚀 ~ duplicatess:", duplicatess); */
 
-/*//!------------------------------------------------------------------------------------------
+//!------------------------------------------------------------------------------------------
 //? **Iteración #7: Buscador de nombres**
+//? Crea una función que reciba por parámetro un array y el valor que desea comprobar que existe
+//? dentro de dicho array - comprueba si existe el elemento, en caso que existan nos devuelve
+//? un true y la posición de dicho elemento y por la contra un false. Puedes usar este array
+//? para probar tu función:
 //!------------------------------------------------------------------------------------------
 
-const nameFinder = [
+const nombres = [
   "Peter",
   "Steve",
   "Tony",
@@ -156,4 +160,15 @@ const nameFinder = [
   "Peggy",
   "Jicessa",
   "Marc",
-]; */
+];
+
+let nameFinder = (nombresArray, nombre) => {
+  let resultado = nombresArray.indexOf(nombre);
+  if (resultado === -1) {
+    return false;
+  } else {
+    return { existenombre: true, resultado: resultado };
+  }
+};
+
+console.log(nameFinder(nombres, "Peter"));
