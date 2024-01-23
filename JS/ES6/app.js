@@ -387,7 +387,7 @@ console.log("🚀 ~ objectJuntos:", objectJuntos); */
 //? los alumnos usando la función .reduce().
 //!-----------------------------------------------------------------------------------------------------------------------
 
-const exams = [
+/* const exams = [
   { name: "Yuyu Cabeza Crack", score: 5 },
   { name: "Maria Aranda Jimenez", score: 1 },
   { name: "Cristóbal Martínez Lorenzo", score: 6 },
@@ -410,4 +410,39 @@ const somaAprovados = aprovados.reduce((acc, exam) => acc + exam.score, 0); // s
 console.log("🚀 ~ somaAprovados:", somaAprovados);
 
 const mediaExams = somaAprovados / exams.length; // media de los <5 es 4.2
-console.log("🚀 ~ mediaExams:", mediaExams);
+console.log("🚀 ~ mediaExams:", mediaExams); */
+
+//!---------------------------------------------------------------------------------------------------------------------
+//? Iteración #8: Bonus
+//? 6.1 Dado el siguiente javascript filtra los videojuegos por gender = 'RPG' usando
+//? .filter() y usa .reduce() para conseguir la media de sus .score.
+//? La función .find() también podría ayudarte para el contrar el genero 'RPG' en el
+//? array .gender.
+//!-----------------------------------------------------------------------------------------------------------------------
+
+const videogames = [
+  { name: "Final Fantasy VII", genders: ["RPG"], score: 9.5 },
+  { name: "Assasins Creed Valhala", genders: ["Aventura", "RPG"], score: 4.5 },
+  { name: "The last of Us 2", genders: ["Acción", "Aventura"], score: 9.8 },
+  { name: "Super Mario Bros", genders: ["Plataforma"], score: 8.5 },
+  { name: "Genshin Impact", genders: ["RPG", "Aventura"], score: 7.5 },
+  {
+    name: "Legend of Zelda: Breath of the wild",
+    genders: ["RPG", "La cosa más puto bonita que he visto nunca"],
+    score: 10,
+  },
+];
+
+const filtrarGender = videogames.filter(
+  (
+    videogame // filtrar los juegos que son RPG
+  ) => videogame.genders.includes("RPG")
+);
+
+console.log(filtrarGender);
+
+const somaGenders =
+  filtrarGender.reduce((acc, valor) => acc + valor.score, 0) /
+  filtrarGender.length; // soma com el reduce y depues la media (utilizar el const filtrar.length porque hemos filtrado solo de RPG)
+
+console.log(somaGenders);
